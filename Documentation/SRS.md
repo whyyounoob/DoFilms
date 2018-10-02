@@ -35,6 +35,6 @@
 - Главный экран приложения
   ![MainPage](Mockups/MainPage.png)
 - Страница для регистрации пользователя
-  ![RegistrationPage](Mockups/RegistrationPage.png)
+  ![SignUpPage](Mockups/SignUpPage.png)
 - Страница для авторизации пользователя
-  ![LoginPage](Mockups/LoginPage.png)
+  ![SignInPage](Mockups/SignIn.png)
