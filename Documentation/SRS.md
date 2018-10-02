@@ -53,7 +53,7 @@
 - Страница добавления фильма
   ![AddFilmPage](Mockups/AddFilmPage.png)
 - Страница отдельного фильма
-  ![LastFilmPage](MockUps/LastFilmPage.png)
+  ![LastFilmPage](Mockups/LastFilmPage.png)
 
 #### 2.3 Характеристики пользователей <a name="2.3"></a>
 ##### 2.3.1 Классы пользователей <a name="2.3.1"></a>
