@@ -44,12 +44,16 @@
 Проект использует фреймворки Spring, Hibernate, а также базу данных MySQL.
 
 #### 2.2 Интерфейс пользователя <a name="2.2"></a>
-- Главный экран приложения
+- Главная страница приложения
   ![MainPage](Mockups/MainPage.png)
 - Страница для регистрации пользователя
   ![SignUpPage](Mockups/SignUpPage.png)
 - Страница для авторизации пользователя
   ![SignInPage](Mockups/SignInPage.png)
+- Страница добавления фильма
+  ![AddFilmPage](Mockups/AddFilmPage.png)
+- Страница отдельного фильма
+  ![LastFilmPage](MockUps/LastFilmPage.png)
 
 #### 2.3 Характеристики пользователей <a name="2.3"></a>
 ##### 2.3.1 Классы пользователей <a name="2.3.1"></a>
