@@ -49,7 +49,7 @@
 - Главная страница приложения
   ![MainPage](Mockups/MainPage.png)
 - Страница для регистрации пользователя
-  ![RegistrationPage](Mockups/RegistrationPagePage.png)
+  ![RegistrationPage](Mockups/RegistrationPage.png)
 - Страница для авторизации пользователя
   ![SignInPage](Mockups/SignInPage.png)
 - Страница добавления фильма
