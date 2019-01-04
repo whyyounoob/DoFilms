@@ -1,0 +1,280 @@
+.inner_copy, .inner_copy a {
+    border: 0;
+    float: right;
+    background: #fff;
+    color: #f00;
+    width: 50%;
+    line-height: 10px;
+    font-size: 10px;
+    margin: -220% 0 0 0;
+    overflow: hidden;
+    padding: 0
+}
+
+html {
+    min-height: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: #000000
+}
+
+a:hover {
+    color: #C60
+}
+
+body {
+    background: #F0F0EB repeat-x left bottom;
+    color: #444;
+    font: normal 62.5% Tahoma, sans-serif
+}
+
+p, code, ul {
+    padding-bottom: 1.2em
+}
+
+li {
+    list-style: none
+}
+
+h1 {
+    font: bold 30px Tahoma, sans-serif;
+    margin-bottom: 4px
+}
+
+h2 {
+    font: normal 20px Tahoma, sans-serif;
+}
+
+code {
+    background: #FFF;
+    border: 1px solid #EEE;
+    border-left: 6px solid #C1CAD3;
+    color: #666;
+    display: block;
+    font: normal 1em Tahoma, sans-serif;
+    line-height: 1.6em;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    white-space: pre
+}
+
+blockquote {
+    display: block;
+    font-weight: bold;
+    padding-left: 28px
+}
+
+h1, h2, h3 {
+    padding-top: 6px
+}
+
+/* misc */
+.clearer {
+    clear: both
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+    font: bold 17px "Trebuchet MS", sans-serif;
+    display: block;
+    float: left;
+}
+
+/* structure */
+.container {
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0 10px 10px;
+    width: 780px
+}
+
+/* title */
+.header {
+    background: #FFF;
+    font-size: 1.2em;
+    height: 35px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    width: 800px
+}
+
+.header .left, .header .right {
+    background: #FFFFFF;
+    color: #FFF;
+    align-items: center;
+    text-align: center;
+
+}
+
+.header .left {
+    background: #A4A4A0;
+    text-align: center;
+    width: 580px;
+    height: 37px
+}
+
+.header .right {
+    margin-left: 5px;
+    width: 212px;
+    height: 35px;
+    border: 1px solid #000000;
+    display: block;
+    float: left;
+}
+
+.header .right h2 {
+    font: normal 1.6em "Trebuchet MS", sans-serif
+}
+
+.header .left h1 {
+    font: normal 2em "Impact", sans-serif
+}
+
+/* navigation */
+.navigation {
+    background: #ffffff;
+    border: 1px solid #000000;
+    height: 35px;
+    font: bold 17px "Comic Sans MS", sans-serif;
+}
+
+.navigation a {
+    background: #ffffff;
+    border-right: 1px solid rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.85);
+    display: block;
+    float: left;
+    /*font: bold 1.1em sans-serif;*/
+    line-height: 35px;
+    padding: 0 12px;
+    text-decoration: none
+}
+
+.navigation a:hover {
+    background-position: left bottom;
+    color: #ff0004;
+}
+
+.right a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.right a:hover {
+    background-position: left bottom;
+    color: #ff0004;
+}
+
+/* main */
+.main {
+
+}
+
+/* sub navigation */
+.sidenav {
+    background: #ffffff;
+    float: right;
+    width: 210px;
+    margin: 10px 0;
+}
+
+.sidenav h2 {
+    color: #F0F0EB;
+    font-size: 1em;
+    line-height: 30px;
+    margin: 0;
+    padding-left: 12px
+}
+
+.sidenav ul {
+    padding: 0;
+    border-top: 1px solid #EAEADA
+}
+
+.sidenav li {
+    border-bottom: 1px solid #EAEADA
+}
+
+.sidenav li a {
+    font-size: 1.1em;
+    color: #223344;
+    display: block;
+    padding: 8px 0 8px 5%;
+    text-decoration: none;
+    width: 95%
+}
+
+.sidenav li a:hover {
+    background: #F0F0EB;
+    color: #223344;
+}
+
+/* content */
+.content {
+    float: left;
+    margin: 10px 0;
+    width: 531px
+}
+
+.content .descr {
+    color: #664;
+    font-size: 1.2em;
+    margin-bottom: 6px
+}
+
+.content ul {
+    margin-left: 18px
+}
+
+.content ol li {
+    list-style: decimal
+}
+
+.content p {
+    font-family: "Lucida Sans Unicode", sans-serif
+}
+
+/* footer */
+.footer {
+    color: #FFF;
+    font: bold 1em sans-serif;
+    line-height: 39px;
+    padding: 0 12px;
+    text-align: center
+}
+
+.footer .right {
+    color: #DEF
+}
+
+.footer .right a {
+    color: #DEF;
+    text-decoration: none
+}
+
+.footer a, .footer a:hover, .footer .right a:hover {
+    color: #FFF
+}
+
+.films {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 5 16px;
+    width: 530px;
+    display: block
+}
+
+.films a {
+    font: normal 15px Tahoma, sans-serif;
+    color: #0007c2;
+}
