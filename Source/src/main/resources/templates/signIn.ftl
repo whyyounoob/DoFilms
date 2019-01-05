@@ -12,7 +12,7 @@
 
 <form method='post' class='reg-form'>
 
-    <h1>Registration</h1>
+    <h1>Log In</h1>
     <br>
     <div class='form-row'>
         <label for='form_username'>Username: </label>
@@ -20,22 +20,12 @@
     </div>
 
     <div class='form-row'>
-        <label for='form_email'>Email: </label>
-        <input type='email' id='form_email' name='email'>
-    </div>
-
-    <div class='form-row'>
         <label for='form_password'>Password: </label>
-        <input type='password' id='form_password' name='password'>
-    </div>
-
-    <div class='form-row'>
-        <label for='form_confirm'>Confirm: </label>
-        <input type='password' id='form_confirm' name='confirm'>
+        <input type='password' id='from_password' name='password'>
     </div>
 
     <div class="form-row">
-        <input type="submit" value='Sign Up'>
+        <input type="submit" value='Sign In'>
     </div>
 
 </form>

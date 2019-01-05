@@ -14,14 +14,14 @@
             <a href="/random">Random Films</a>
             <a href="/myFilm">My films</a>
             <a href="/schedule">Movie schedule</a>
-            <a href="/last">Last film</a>
+            <a href="/lastFilm">Last film</a>
         </div>
     </div>
     <div class="right">
         <#if userDto??>
             <h1>${userDto.login}</h1>
         <#else>
-            <a href="/signIn">Sign In</a>
+            <a href="/logIn">Sign In</a>
             or
             <a href="/signUp">Sign Up</a>
         </#if>

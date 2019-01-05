@@ -37,4 +37,8 @@ public class FilmService {
     }
     return films;
   }
+
+  public FilmDTO getById(Long id) {
+    return filmRepository.getById(id).map(FilmConverter::toDTO).orElse(null);
+  }
 }

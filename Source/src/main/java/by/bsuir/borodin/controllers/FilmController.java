@@ -16,6 +16,8 @@ public class FilmController {
 
   private FilmService filmService;
 
+  private FilmDTO lastFilm;
+
   @Autowired
   public FilmController(FilmService filmService) {
     this.filmService = filmService;
@@ -36,7 +38,20 @@ public class FilmController {
   }
 
   @GetMapping("/{id}")
-  public String lastFilm(ModelMap model, @PathVariable(value = "id") long filmId) {
+  public String getOne(ModelMap model, @PathVariable(value = "id") long filmId) {
+    FilmDTO film = filmService.getById(filmId);
+    lastFilm = film;
+    model.addAttribute("filmFromServer", film);
+    return "film";
+  }
 
+  @GetMapping("/lastFilm")
+  public String lastFilm(ModelMap model) {
+    if (lastFilm != null) {
+      model.addAttribute("filmFromServer", lastFilm);
+    } else {
+      model.addAttribute("filmFromServer", filmService.getById(1L));
+    }
+    return "film";
   }
 }
