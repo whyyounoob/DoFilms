@@ -29,4 +29,12 @@ public class UserService {
             .build();
     userRepository.save(user);
   }
+
+  public boolean checkUsername(String username) {
+    return !userRepository.findByUsername(username).isPresent();
+  }
+
+  public boolean checkEmail(String email) {
+    return !userRepository.findByEmail(email).isPresent();
+  }
 }

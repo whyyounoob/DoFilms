@@ -9,7 +9,9 @@
 
 <body>
 
-
+<#if error??>
+    <div class="alert alert-danger" role="alert">Логин или пароль введены неверно</div>
+</#if>
 <form method='post' class='reg-form'>
 
     <h1>Log In</h1>

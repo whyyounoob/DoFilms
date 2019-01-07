@@ -1,0 +1,48 @@
+table {
+    text-align: center;
+    width: 90%;
+}
+
+table td:first-child {
+    text-align: center;
+}
+
+
+
+.add-news {
+    background: #FFFFFF;
+    padding: 0 16px;
+    width: 749px;
+    display: block;
+}
+
+.add-news label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: normal 200% Tahoma, sans-serif
+}
+
+.add-news textarea, .add-news input {
+    padding: 10px;
+    width: 740px;
+}
+
+.button input {
+    background-color: #223344;
+    border: none;
+    color: white;
+    padding: 2% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+}
+
+frame {
+    max-width: 600px;
+}
