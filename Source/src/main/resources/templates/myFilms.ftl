@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="<@spring.url '/css/style.css'/>" type="text/css">
 </head>
 <body>
-<#if addFilm??>
-    <div class="alert alert-danger" role="alert">Film was add</div>
-</#if>
 <div class="header">
     <div class="left">
         <div class="navigation">
@@ -43,31 +40,34 @@
                        checked>
                 <label for="genre">Genre</label>
             </div>
+
             <div>
                 <input type="radio" id="name" name="searchType" value="name">
                 <label for="name">Name</label>
             </div>
+
             <input type="submit" value="Search">
         </form>
     </div>
     <div class="left">
         <#list filmsFromServer as film>
             <div class="films">
-                <h1>${film.title}</h1>
-                <h2>Genre: ${film.getGenres()}</h2>
-                <h2>Year: ${film.getYear()}</h2>
-                <h2><#if film.averageRate?has_content>
-                        ${film.getAverageRate()}/10.0
+                <h1>${film.getFilm().title}</h1>
+                <h2>Genre: ${film.getFilm().getGenres()}</h2>
+                <h2>Year: ${film.getFilm().getYear()}</h2>
+                <h2><#if film.getFilm().averageRate?has_content>
+                        ${film.getFilm().getAverageRate()}/10.0
                     <#else>
                         This film has no ratings yet.
                     </#if></h2>
-                <a href="/${film.id}">watch more</a>
+                <a href="/${film.getFilm().id}">watch more</a>
                 <br/>
             </div>
             <br/>
         </#list>
     </div>
-
+    <div class="right">
+    </div>
 </div>
 </body>
 </html>

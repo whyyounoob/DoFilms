@@ -41,6 +41,6 @@ public class User {
     @Enumerated(EnumType.STRING)
     private State state;
 
-    @OneToMany(mappedBy = "user", orphanRemoval = true)
+    @OneToMany(mappedBy = "user", orphanRemoval = true, fetch = FetchType.EAGER)
     private List<UserFilm> films = new ArrayList<>();
 }

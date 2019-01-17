@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="<@spring.url '/css/style.css'/>" type="text/css">
 </head>
 <body>
+<#if addFilm??>
+    <div class="alert alert-danger" role="alert">Film was add</div>
+</#if>
 <div class="header">
     <div class="left">
         <div class="navigation">
             <a href="/top100">Top 100</a>
             <a href="/random">Random Films</a>
-            <a href="/myFilm">My films</a>
+            <a href="/myFilms">My films</a>
             <a href="/schedule">Movie schedule</a>
             <a href="/lastFilm">Last film</a>
         </div>
@@ -20,7 +23,6 @@
     <div class="right">
         <#if userDto??>
             <h1>${userDto.username}</h1>
-            <h1>${userDto.id}</h1>
         <#else>
             <a href="/login">Sign In</a>
             or
@@ -31,6 +33,23 @@
 <br/>
 
 <div class="container">
+    <div class="right">
+        <form action="/search" method="post">
+            <label for='search'>Search: </label>
+            <p></p>
+            <input type='text' id='search' name='search'>
+            <div>
+                <input type="radio" id="genre" name="searchType" value="genre"
+                       checked>
+                <label for="genre">Genre</label>
+            </div>
+            <div>
+                <input type="radio" id="name" name="searchType" value="name">
+                <label for="name">Name</label>
+            </div>
+            <input type="submit" value="Search">
+        </form>
+    </div>
     <div class="left">
         <#list filmsFromServer as film>
             <div class="films">
@@ -38,9 +57,9 @@
                 <h2>Genre: ${film.getGenres()}</h2>
                 <h2>Year: ${film.getYear()}</h2>
                 <h2><#if film.averageRate?has_content>
-                    ${film.getAverageRate()}/10.0
-                <#else>
-                    This film has no ratings yet.
+                        ${film.getAverageRate()}/10.0
+                    <#else>
+                        This film has no ratings yet.
                     </#if></h2>
                 <a href="/${film.id}">watch more</a>
                 <br/>
@@ -48,8 +67,7 @@
             <br/>
         </#list>
     </div>
-    <div class="right">
-    </div>
+
 </div>
 </body>
 </html>

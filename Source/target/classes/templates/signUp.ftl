@@ -3,8 +3,7 @@
 <html>
 <head>
     <title>DoFilms</title>
-    <link rel="stylesheet" href="<@spring.url '/css/default.css'/>" type="text/css" media="screen">
-    <link rel="stylesheet" href="<@spring.url '/css/style.css'/>" type="text/css">
+    <link rel="stylesheet" href="<@spring.url '/css/login.css'/>" type="text/css" media="screen">
 </head>
 
 <body>
@@ -19,35 +18,19 @@
     <div class="alert alert-danger" role="alert">Pass</div>
 </#if>
 
-<form method='post' class='reg-form'>
 
-    <h1>Registration</h1>
-    <br>
-    <div class='form-row'>
-        <label for='form_username'>Username: </label>
-        <input type='text' id='form_username' name='username'>
-    </div>
-
-    <div class='form-row'>
-        <label for='form_email'>Email: </label>
-        <input type='email' id='form_email' name='email'>
-    </div>
-
-    <div class='form-row'>
-        <label for='form_password'>Password: </label>
-        <input type='password' id='form_password' name='password'>
-    </div>
-
-    <div class='form-row'>
-        <label for='form_confirm'>Confirm: </label>
-        <input type='password' id='form_confirm' name='confirm'>
-    </div>
-
-    <div class="form-row">
-        <input type="submit" value='Sign Up'>
-    </div>
-
+<form class="loginForm" method='post'>
+    <label class="dataLabel">Login</label>
+    <input type="text" class="data" placeholder="Login" name="username">
+    <label class="dataLabel">Email</label>
+    <input type="email" class="data" placeholder="Email" name="email">
+    <label class="dataLabel">Password</label>
+    <input type="password" class="data" placeholder="Password" name="password">
+    <label class="dataLabel">Confirm</label>
+    <input class="data" placeholder="Confirm" type="password" name="confirm">
+    <input type="submit" class="login" value="Sign Up">
 </form>
+
 </body>
 
 </html>

@@ -45,7 +45,7 @@ li {
 }
 
 h1 {
-    font: bold 30px Tahoma, sans-serif;
+    font: bold 20px Tahoma, sans-serif;
     margin-bottom: 4px
 }
 
@@ -85,11 +85,23 @@ h1, h2, h3 {
     float: left
 }
 
+select {
+    height: 30px;
+    width: 100px;
+    font: normal 20px Tahoma, sans-serif;
+    padding-right: 40px;
+}
+
+.selectbtn input {
+    height: 30px;
+    width: 100px;
+    font: normal 20px Tahoma, sans-serif
+}
+
 .right {
     float: right;
     font: bold 17px "Trebuchet MS", sans-serif;
-    display: block;
-    float: left;
+    display: block
 }
 
 /* structure */
@@ -110,9 +122,17 @@ h1, h2, h3 {
     width: 800px
 }
 
+.container .right {
+    background: #FFFFFF;
+    width: 200px;
+    color: #000000;
+    margin-left: 5px;
+    display: block
+}
+
 .header .left, .header .right {
     background: #FFFFFF;
-    color: #FFF;
+    color: #000000;
     align-items: center;
     text-align: center;
 
@@ -130,8 +150,7 @@ h1, h2, h3 {
     width: 212px;
     height: 35px;
     border: 1px solid #000000;
-    display: block;
-    float: left;
+    display: block
 }
 
 .header .right h2 {
@@ -282,7 +301,6 @@ h1, h2, h3 {
 }
 
 
-
 .form-row {
     margin-bottom: 8px;
     overflow: hidden;
@@ -312,30 +330,9 @@ h1, h2, h3 {
     float: left;
 }
 
-br{
+br {
     margin: 5px 0px;
 }
-
-.form-row label {
-    float: left;
-}
-.form-row input[type=submit] {
-    padding: 5px;
-    height: 25px;
-    width: 65%;
-    line-height: 10px;
-    background: #337AB7;
-    color: white;
-    font: normal 24px Tahoma, sans-serif;
-}
-
-.form-row input[type=submit]:hover {
-    background: #286090;
-}
-
-
-
-
 
 .alert {
     padding: 15px;

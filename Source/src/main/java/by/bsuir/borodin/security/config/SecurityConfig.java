@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         .antMatchers("/books/top/**", "/signUp/**")
         .permitAll()
-        .antMatchers("/authors/**", "/books/**", "/comments/**", "/genres/**", "/list/**")
+        .antMatchers("/myFilms/**", "/random/**")
         .authenticated()
         .antMatchers("/users/**")
         .hasAuthority(Role.ADMIN.name())
